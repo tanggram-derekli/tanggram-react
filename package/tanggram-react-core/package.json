@@ -1,7 +1,18 @@
 {
   "homepage": "https://github.com/tanggram/tanggram-react",
   "name": "@tanggram/react-core",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
+  "description": "React components (based on Material UI) that implement Tanggram Design.",
+  "keywords": [
+    "react",
+    "react-component",
+    "tanggram design"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanggram/tanggram-react.git"
+  },
+  "license": "MIT",
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -58,10 +69,6 @@
   "jest": {
     "setupTestFrameworkScriptFile": "mock-local-storage"
   },
-  "keywords": [
-    "react",
-    "ui"
-  ],
   "main": "index.js",
   "module": "esm/tanggram-react-core.js",
   "private": false,

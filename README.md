@@ -1,5 +1,5 @@
 # Tanggram React Packages
 
-### @tanggram/react-core
+### [@tanggram/react-core](package/tanggram-react-core)
 
-### @tanggram/react-icons
+### [@tanggram/react-icons](package/tanggram-react-icons)
