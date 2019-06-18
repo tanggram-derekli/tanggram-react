@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.size-snapshot.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/coverage
+node_modules
+build
+var
+package-lock.json
