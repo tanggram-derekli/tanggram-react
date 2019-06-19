@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {TNumber, TObject} from '../prop_types';
-import {updateProps} from '../utils/element';
+import {updateProps} from '../util/element';
 
 /**
  * @return {*}

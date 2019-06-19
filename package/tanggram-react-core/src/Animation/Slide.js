@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {makeStyles} from '@material-ui/styles';
 import {TNumber, TBool, TNode, declareValues} from '../prop_types';
-import {addClassNames, updateProps} from '../utils/element';
+import {addClassNames, updateProps} from '../util/element';
 
 const useStylesY = ({initOffset}) => {
   return makeStyles(theme => ({
