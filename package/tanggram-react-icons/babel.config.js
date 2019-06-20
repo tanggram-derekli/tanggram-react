@@ -16,6 +16,11 @@ if (process.env.BABEL_ENV === 'es') {
   ];
 }
 
+const defaultAlias = {
+  '@tanggram/react-core': './package/tanggram-react-core/src',
+  '@tanggram/react-icons': './package/tanggram-react-icons/src',
+};
+
 module.exports = {
   presets: defaultPresets.concat(['@babel/preset-react']),
   plugins: [
@@ -26,28 +31,30 @@ module.exports = {
   ],
   ignore: [/@babel[\\|/]runtime/],
   env: {
-    // test: {
-    //   sourceMaps: 'both',
-    //   plugins: [
-    //     [
-    //       'babel-plugin-module-resolver',
-    //       {
-    //         root: ['./'],
-    //       },
-    //     ],
-    //   ],
-    // },
-    // coverage: {
-    //   plugins: [
-    //     'babel-plugin-istanbul',
-    //     [
-    //       'babel-plugin-module-resolver',
-    //       {
-    //         root: ['./'],
-    //       },
-    //     ],
-    //   ],
-    // },
+    test: {
+      sourceMaps: 'both',
+      plugins: [
+        [
+          'babel-plugin-module-resolver',
+          {
+            root: ['./'],
+            alias: defaultAlias,
+          },
+        ],
+      ],
+    },
+    coverage: {
+      plugins: [
+        'babel-plugin-istanbul',
+        [
+          'babel-plugin-module-resolver',
+          {
+            root: ['./'],
+            alias: defaultAlias,
+          },
+        ],
+      ],
+    },
     development: {
       plugins: [
         [
