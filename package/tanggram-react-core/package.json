@@ -72,11 +72,15 @@
     "rollup-plugin-uglify": "^6.0.2"
   },
   "jest": {
-    "setupFilesAfterEnv": ["mock-local-storage"],
+    "setupFilesAfterEnv": [
+      "mock-local-storage"
+    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],
-    "testMatch": ["**/t/**/(*.)+(spec|test).[jt]s?(x)"]
+    "testMatch": [
+      "**/t/**/(*.)+(spec|test).[jt]s?(x)"
+    ]
   },
   "main": "index.js",
   "module": "esm/tanggram-react-core.js",
